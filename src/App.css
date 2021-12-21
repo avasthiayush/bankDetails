@@ -83,7 +83,7 @@
 
 .paggination {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .box1 {
   margin-right: 50px;
@@ -99,7 +99,7 @@
 }
 .header {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .search input {
   width: 15vw;
