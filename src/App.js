@@ -1,20 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import Banks from './components/Banks'
-import { Route, Routes, BrowserRouter } from "react-router-dom";
-import IndividualBanks from './components/IndividualBanks';
+import React from 'react'
+import { BasicTable } from './components/BasicTable';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import IndividualBanks from "./components/IndividualBanks"
+
 
 function App() {
-  return (
 
-    <div>
+  return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Banks />}></Route>
-          <Route path="/bank-details/:city/:ifsc" element={<IndividualBanks />}></Route>
+          <Route path="/" element={<BasicTable />}></Route>
+          <Route path="/bank-details" element={<IndividualBanks />}></Route>
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
